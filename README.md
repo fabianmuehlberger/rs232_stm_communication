@@ -8,6 +8,8 @@ realising a RS232 Port via GPIO, Timer and Interrupts with an Nucleo **STM32 F10
 4. How we can realise it with an Nucleo Board
 5. fabian hat auch was geschrieben
 6. Live Demo 
+7. Test
+
 
 
 
