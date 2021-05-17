@@ -5,6 +5,10 @@
 ## Interrupt 
 * Wieso, welshalb, Warum 
 
+## RS232 Hardware 
+* Komponenten
+* Zusammenbau 
+* Schnittstelle/Pins
 
 
 # Testprogramme:
@@ -57,6 +61,7 @@ Nucleo erhält signal und LED blinkt
 ## Usefull Links
 
 https://www.elektronik-labor.de/RS232/RS232_3.htm
-
+https://www.arduino.cc/en/pmwiki.php?n=Tutorial/ArduinoSoftwareRS232
+https://kompendium.infotip.de/rs-232-die-serielle-schnittstelle.html
 https://electronics.stackexchange.com/questions/110478/difference-between-uart-and-rs-232   
-The UART functions to convert parallel data from PC bus lines to serial data for transmission via line drivers to RS-232, RS-422, and RS-485 devices. The clock pin of the UART chip is feed by a programmable clock source. The clock speed is determined by the baud rate configuration that the device will be using. The clock speed is 16 X the baud rate. Placing an oscilloscope probe on the clock pin of a UART chip and determining the frequency, then dividing by 16 is one way to determine an unknown baud rate.
+https://www.circuitstoday.com/uart-between-microcontrollers-proteus
