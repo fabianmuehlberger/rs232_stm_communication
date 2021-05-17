@@ -3,7 +3,7 @@
 #define LED_PIN                                GPIO_PIN_5
 #define LED_GPIO_PORT                          GPIOA
 #define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOA_CLK_ENABLE()
-
+ 
 int main(void)
 {
   HAL_Init();
@@ -20,9 +20,11 @@ int main(void)
 
   while (1)
   {
-    HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
-    
+    // HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
+    HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, 1);
     HAL_Delay(1000);
+    //HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, 0);
+    //HAL_Delay(1000);
   }
 }
 
