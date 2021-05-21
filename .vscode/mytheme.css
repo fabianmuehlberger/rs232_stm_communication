@@ -1,0 +1,7 @@
+/* @theme your-theme */
+
+@import 'uncover';
+
+section {
+  background: rgb(175, 161, 148);
+}
