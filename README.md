@@ -10,6 +10,14 @@ realising a RS232 Port via GPIO, Timer and Interrupts with an Nucleo **STM32 F10
 6. Live Demo 
 7. Test
 
+## Uart Config
+
+| Parameter | Values |   
+|---|---|   
+| boud | 9600|
+| number of Bites | 8 |
+| parity | none |
+| stop Bit | 1 |  
 
 
 

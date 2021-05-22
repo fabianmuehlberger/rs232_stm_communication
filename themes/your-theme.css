@@ -1,0 +1,15 @@
+/*!
+ * Marp your-theme 
+ *
+ * @theme your-theme
+ * @author fabian muehlberger
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ */
+
+@import './default.scss';
+
+section {
+  background: #fc9;
+}
