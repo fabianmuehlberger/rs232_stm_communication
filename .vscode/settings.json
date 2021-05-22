@@ -1,5 +1,5 @@
 {
-    "markdown.marp.themes": [
-      "./mytheme.css"
-    ]
-  }
+  "markdown.marp.themes": [
+    "../themes/your-theme.css"
+  ]
+}

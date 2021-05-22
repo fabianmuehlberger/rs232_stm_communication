@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: uncover
-footer: "florian biatel | fabian muehlberger"
 paginate: true
 headingDivider: false
 style: |
@@ -25,37 +24,60 @@ style: |
 ---
 
 ### Wozu 
-*RS* **-** *recomended standard* 
+
 
 * Serieller Datenaustausch
+* p2p Verbindung
 * asyncron 
 * flankenerkennung mittels samples
 * Wortweise übertragung 5-9 bits
-* 
+* negative Logik
 
 ---
+
+
 
 ### Port
 
 * 25 Pol Sub-D-Verbinder (2 Kanäle)
 * EDV 9 Pol (1 Kanal)
-![bg vertical right width:300](pictures\rs232_25pol.jpg)
-![bg right width:300](pictures\rs232_9pol.jpeg)
+![bg vertical right width:300](pictures/rs232_25pol.jpg)
+![bg right width:300](pictures/rs232_9pol.jpeg)
 
 ---
-![width:1000 pinout Table](\pictures\rs232_pin_table.gif)   
+### Geschichte
+*RS* **-** *recomended standard* 
+* 1990er 
+* Mainframe Text-Terminal Verbindung
+* Übertragung über Telefonleitung
+* Immer weniger in verwendung.
+---
+![width:1000 pinout Table](pictures/rs232_pin_table.gif)
 
 ---
 
-DTE-DTE Verbindung
 
-![width:500 stecker](\pictures\rs232_pinbelegung.gif)  
+---
+### Flusssteuerung
 
-![bg right width:300 verbindung ](pictures\rs232_verbindung.gif)
+* DTE > DTE Digital Handshake
+* NUllmoduem Kabel 
+
+
+![width:500 stecker](pictures/rs232_pinbelegung.gif)  
+
+![bg right width:300 verbindung ](pictures/rs232_verbindung.gif)
 
 ---
 
+### Uart Config
 
+| Parameter | Values |   
+|:---|:---|   
+| boud | 9600|
+| Bites | 8 |
+| parity | none |
+| stop Bit | 1 |  
 
 ---
 
@@ -69,9 +91,11 @@ DTE-DTE Verbindung
 
 ---
 
-![width:1000 signale](\pictures\rs232_signale.gif)
+![width:1000 signale](pictures/rs232_signale.gif)
 
 --- 
 
 ### quellen:
 [1] https://kompendium.infotip.de/rs-232-die-serielle-schnittstelle.html
+[2] https://de.wikipedia.org/wiki/RS-232
+[3] https://www.st.com/en/evaluation-tools/nucleo-f103rb.html
