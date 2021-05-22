@@ -34,6 +34,7 @@ int main(void)
   while (1)
   {
     HAL_GPIO_TogglePin(GPIOA, LD2_Pin); 
+    HAL_GPIO_TogglePin(GPIOA, PA6_PIN); 
     HAL_Delay(1000);
   }
 }
@@ -127,12 +128,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PA4_Pin */
-  GPIO_InitStruct.Pin = PA4_PIN;
+  /*Configure GPIO pin : PA6_Pin */
+  GPIO_InitStruct.Pin = PA6_PIN;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PB1_Pin */
+  GPIO_InitStruct.Pin = PB1_PIN;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);

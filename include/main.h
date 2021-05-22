@@ -71,8 +71,10 @@ void Error_Handler(void);
 //Define GPIOs
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
-#define PA4_PIN GPIO_PIN_4
+#define PA6_PIN GPIO_PIN_6
 #define GPIO_LED_PORT GPIOA
+
+#define PB1_PIN GPIO_PIN_1
 
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
